@@ -1,4 +1,5 @@
 - Feature Name: `ko'oi`
+- Author: Aris (Karim) Merchant (@bookofportals)
 - Start Date: yyyy-mm-dd
 - RFC Pull Request: (leave this empty)
 - Current Status: draft proposal
@@ -40,7 +41,7 @@ brings the language into conformance with that expectation, provided that `ko`
 is taken as an abbreviation for `do ko'oi`.
 
 It also increases cultural neutrality. Many languages provide some form of
-imperative construction in the third and first person. Ancient Greek has third
+imperative construction in the third and first persons. Ancient Greek has third
 person imperatives, and Irish and Turkish have imperatives in all three persons.
 Furthermore, many languages that do not provide imperatives in the first and
 third persons provide jussive constructions which carry a similar force. Such
@@ -49,8 +50,9 @@ imperative and jussive moods are unified into a volitive mood. In short, in the
 current state of affairs Lojban makes a distinction that is far from universal
 among other languages. While it may be true in English that there is a
 distinction between the imperative and jussive moods, there is no reason to
-continue this distinction in Lojban. Unifying on the Esperanto model allows
-constructions from any of these languages to be translated into Lojban.
+continue this distinction in Lojban. Unifying on something akin to the Esperanto
+model allows constructions from any of these languages to be translated into
+Lojban.
 
 
 # Guide-level Explanation
