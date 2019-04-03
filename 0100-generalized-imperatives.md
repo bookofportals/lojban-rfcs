@@ -59,18 +59,18 @@ constructions from any of these languages to be translated into Lojban.
 To express an command directed at someone other than the listener, you can use
 `ko'oi`. In fact, `ko` is just short for `do ko'oi`. Here are some examples:
 
-`mi'o ko'oi klama`
-Let's go!
+`mi'o ko'oi klama` <br/><br/>
+Let's go! <br/><br/>
 *Note: This is short for "let us go". "Let X do Y" is a useful translation
 for many uses of `ko'oi`.*
 
-`le jenmi ko'oi cu gunta le bradi`
+`le jenmi ko'oi cu gunta le bradi` <br/><br/>
 The army shall attack the enemy!
 
 You can even put it on the sentence as a whole, not marking any specific target,
 like this:
 
-`.i ko'oi le jenmi cu gunta le bradi`
+`.i ko'oi le jenmi cu gunta le bradi` <br/><br/>
 Let it come to pass that the army attacks the enemy!
 
 This change is not expected to change the meaning of anything you can
