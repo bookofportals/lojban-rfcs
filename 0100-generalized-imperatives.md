@@ -1,64 +1,143 @@
-- Feature Name: `ko'oi` 
-- Start Date: 2019-03-26
-- RFC pull request: (leave this empty)
+- Feature Name: `ko'oi`
+- Start Date: yyyy-mm-dd
+- RFC Pull Request: (leave this empty)
+- Current Status: draft proposal
+
+**This proposal is non-standard, pending adoption by the LFK and ratification
+by the LLG.**
 
 # Summary
 [Summary]: #summary
 
-This proposal would add the word `ko'oi`(in selma'o UI) as a generalization of imperatives. `ko'oi` would act as a
-generalized imperative marker, and when applied to a sumti would mark the target of the command;
-`ko` would expand to `do ko'oi`.
+This proposal adds the word `ko'oi`(in selma'o `UI`) as a generalization of
+imperatives. `ko'oi` is a universal imperative marker, and when applied to a
+sumti marks the target of the command; `ko` expands to `do ko'oi`.
 
 
 # Background and Motivation
 [Background and Motivation]: #background-and-motivation
 
-What was done before? Why are we proposing this? What use cases does it support? What is the expected outcome?
+The Lojban systems for dealing with commands are a relatively weak part of the
+language. Currently, one can only give commands to the listener(s), by using
+`ko` instead of `do`. Alternatively, one could use `.e'o`, which marks a
+request. However, the CLL uses `.e'o` *in addition* to `ko`, suggesting that
+`.e'o` on its own does not turn a bridi into a command. Furthermore, the range
+of uses of `ko` is substantially broader than `e'o`, covering all cases in which
+it is the desired effect of the sentence is that some party will comply with it.
+This can encompass `.e'o`, `.au` (desire), `.ei` (obligation), or even in the
+right circumstances other attitudes such as `.e'u` (suggestion). In this
+proposal, `ko'oi` is added, which has the full range of meaning of `ko` but can
+apply to pronouns other than `do`, or even to the sentence as a whole.
 
-The Lojban systems for dealing with commands are a relatively weak part of the language. Unlike questions,
-where substantial consideration was given to the various types of question that might be asked, commands
-were kept relatively simple. Currently, one can only give commands to the listener(s), `do`. Alternatively,
-one could use `e'o`, which marks a request. However, the CLL uses `e'o` *in addition* to `ko`, suggesting
-that `e'o` on its own does not render a bridi a command. Further, the range of uses of `ko` is
-substantially broader than `e'o`, covering all cases in which it is the intended effect of the sentence
-that some party will comply with it. 
+This change is beneficial for several reasons. It plugs a hole in the language,
+as `ko` is currently exceptional in being available solely in second person.
+There is no other instance where a specific propositional attitude is associated
+with a specific pronoun. Requiring that the imperative/hortative attitude can
+only occur if the person who is being talked to is the same as the one being
+commanded is unduly restrictive and makes Lojban less regular. Other
+propositional attitudes are expressed through selma'o `UI`, and this proposal
+brings the language into conformance with that expectation, provided that `ko`
+is taken as an abbreviation for `do ko'oi`.
+
+It also increases cultural neutrality. Many languages provide some form of
+imperative construction in the third and first person. Ancient Greek has third
+person imperatives, and Irish and Turkish have imperatives in all three persons.
+Furthermore, many languages that do not provide imperatives in the first and
+third persons provide jussive constructions which carry a similar force. Such
+languages include English, Latin, Arabic, and Russian. In Esperanto, the
+imperative and jussive moods are unified into a volitive mood. In short, in the
+current state of affairs Lojban makes a distinction that is far from universal
+among other languages. While it may be true in English that there is a
+distinction between the imperative and jussive moods, there is no reason to
+continue this distinction in Lojban. Unifying on the Esperanto model allows
+constructions from any of these languages to be translated into Lojban.
+
 
 # Guide-level Explanation
 [Guide-level Explanation]: #guide-level-explanation
 
-Explain the proposal as if it was already accepted and you were teaching it to a Relojban speaker. That generally means:
+To express an command directed at someone other than the listener, you can use
+`ko'oi`. In fact, `ko` is just short for `do ko'oi`. Here are some examples:
 
-- Explaining the proposal in terms of examples.
-- Explaining how the proposal impacts the way Relojban users (novices or experts) speak and write the language, how they use the software tools and the other Relojban resources. It should explain the impact as concretely as possible.
-- If applicable, provide instruction on how to migrate existing Relojban texts or code to the new approach.
+`mi'o ko'oi klama`
+Let's go!
+*Note: This is short for "let us go". "Let X do Y" is a useful translation
+for many uses of `ko'oi`.*
+
+`le jenmi ko'oi cu gunta le bradi`
+The army shall attack the enemy!
+
+You can even put it on the sentence as a whole, not marking any specific target,
+like this:
+
+`.i ko'oi le jenmi cu gunta le bradi`
+Let it come to pass that the army attacks the enemy!
+
+This change is not expected to change the meaning of anything you can
+currently say; it will merely allows some expressions that were not
+previously allowed.
 
 
 # Reference-level Explanation
 [Reference-level Explanation]: #reference-level-explanation
 
-Explain any technical changes (particularly changes in the grammar specifications) in sufficient detail so that:
+`ko'oi` is added as a member of selma'o `UI6`. Definition:
+```
+discursive: imperative/hortative; attached to a sumti indicates that the
+sumti is the target of the command; generally, indicates a general sense of
+urging or commanding that the bridi take place.
+```
 
-- It is reasonably clear how the proposal would be implemented.
-- It is reasonably clear how it interacts with other features of the language.
-- Corner cases are dissected by example.
+A note should be appended to the definition of `ko` specifying that it expands
+to `do ko'oi`.
 
 
 # Drawbacks
 [Drawbacks]: #drawbacks
 
-Why should we *not* do this?
+This adds a new cmavo, which may prove not to be justified. Additionally,
+this allocates a cmavo in the experimental range, which could be considered
+a negative. That problem is considered more below.
 
 
 # Alternatives
 [Alternatives]: #alternatives
 
-- What other designs have been considered and what is the rationale for not choosing them?
-- What is the impact of not doing this?
+Assigning a new cmavo in the stable range, rather than using an experimental
+form, was considered and rejected for three reasons:
+
+  1. There isn't much non-experimental cmavo space left.
+  2. `ko'oi` has a form resembling that of `ko`, which would likely be lost
+     if a stable cmavo was found.
+  3. People have been using `ko'oi` for a long time. Changing it up means that
+     they will have to learn a new cmavo, and that anyone who reads old stuff
+     that uses the old form will not know what's going on. Obviously, the usage
+     is experimental, so we don't have to support it, but it's less confusing
+     for everyone if we do.
+
+The strategy currently proposed has the disadvantage that the morphological
+distinction between experimental and stable usage is broken. In the opinion
+of the author, maintaining this distinction isn't worthwhile in light of
+the above concerns, which are likely to apply similarly to many other
+experimental cmavo.
 
 
 # Unresolved Questions
 [Unresolved Questions]: #unresolved-questions
 
-- What aspects of the proposal need to be ironed out in the RFC discussion before this gets merged?
-- What aspects of the proposal are expected to be resolved later, at implementation time?
-- What related issues are out of scope for this RFC that could be addressed in the future independently of the solution that comes out of this RFC?
+There are no unresolved questions.
+
+# Backwards Compatibility
+[Backwards Compatibility]: #backwards-compatibility
+
+This proposal is backwards compatible with all stable usage. It is incompatible
+with any usage of `ko'oi` with a definition other than that described here;
+no such usage is known to exist. This proposal would make `ko'oi` stable,
+obliging us to maintain its definition in future.
+
+# Credits
+[Credits]: #credits
+
+La guskant originally proposed this cmavo. The [Alternatives] section was
+derived in part from a post by phma in the LLG 2018 Members Meeting on
+Mattermost.
